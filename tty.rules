@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", KERNEL=="ttyUSB*", ACTION=="add", RUN+="/opt/tty.hello.sh '%E{DEVNAME}'"
