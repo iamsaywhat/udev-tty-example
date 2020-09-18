@@ -1,0 +1,10 @@
+#!/bin/bash
+if test -f "/opt/tty.hello.sh"
+then
+    sudo rm "/opt/tty.hello.sh"
+fi
+if test -f "/etc/udev/rules.d/tty.rules"
+then
+    sudo rm "/etc/udev/rules.d/tty.rules"
+fi
+sudo udevadm control --reload-rules

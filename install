@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo cp ./tty.hello.sh /opt/tty.hello.sh
+sudo cp ./tty.rules /etc/udev/rules.d/tty.rules
+sudo udevadm control --reload-rules
